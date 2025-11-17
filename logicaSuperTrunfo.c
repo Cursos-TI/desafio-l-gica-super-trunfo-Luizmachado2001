@@ -58,7 +58,7 @@ int main() {
     estado2[strcspn(estado2, "\n")] = 0;
 
     printf("Digite o código da carta: ");
-    scanf("%5s", codigoCarta2);
+    scanf("%s", codigoCarta2);
     getchar();
 
     printf("Digite o nome da cidade: ");
@@ -116,15 +116,15 @@ int main() {
 
 
     // Exibir resultados só com 1 ou 0
-    printf("Comparação de Cartas: (População)\n"); 
+    printf("\nComparação de Cartas: (População)\n"); 
 
     // mostrando cartas
     printf("Carta 1 - %s (%s) População: %lu\n", nomeCity, estado, populacao);
     printf("Carta 2 - %s (%s) População: %lu\n", nomeCity2, estado2, populacao2);
     if (populacao > populacao2){
-        printf("Carta 1 -  %s  População: %lu\n", nomeCity, populacao);
+        printf("Carta 1 Venceu-  %s  População: %lu\n", nomeCity, populacao);
     }else if (populacao2 > populacao){
-        printf("Carta 2 - %s População: %lu\n", nomeCity2, populacao2);
+        printf("Carta 2 Venceu- %s População: %lu\n", nomeCity2, populacao2);
     }else{
         printf("empate\n");
     }
