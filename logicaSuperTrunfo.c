@@ -31,7 +31,7 @@ int main() {
     estado[strcspn(estado, "\n")] = 0;
 
     printf("Digite o código da carta: ");
-    scanf("%5s", codigoCarta);
+    scanf("%s", codigoCarta);
     getchar();
 
     printf("Digite o nome da cidade: ");
